@@ -1,267 +1,288 @@
-html{
-    height: 100%;
-    width: 100%;
+html {
+  height: 100%;
+  width: 100%;
 }
 
 @font-face {
-    font-family: 'Product Sans';
-    font-style: normal;
-    src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
-  }
-  
-body{
-    height: 100%;
-    width: auto;
-    margin: 0 auto;   
-    font-family: Product Sans;    
-    /*Para que no se pueda seleccionar el texto*/
-    -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-     -khtml-user-select: none; /* Konqueror HTML */
-       -moz-user-select: none; /* Old versions of Firefox */
-        -ms-user-select: none; /* Internet Explorer/Edge */
-            user-select: none; /* Non-prefixed version, currently
+  font-family: 'Product Sans';
+  font-style: normal;
+  src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+}
+
+body {
+  height: 100%;
+  width: auto;
+  margin: 0 auto;
+  font-family: Product Sans;
+  /*Para que no se pueda seleccionar el texto*/
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Old versions of Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
                                   supported by Chrome, Edge, Opera and Firefox */
 }
 
-h1{
+h1 {
   margin-top: 0px;
   margin-bottom: 20px;
   font-size: 45px;
 }
 
-h2{
+h2 {
   margin-bottom: 0px;
 }
 
-.logo{
+.logo {
   text-shadow: 1px 1px 2px #8b8686;
 }
 
-#content{
-    display: grid;
-    grid-template-columns: 10% 90%;
-    margin-left: 30px;
-    height: 100%;
+#content {
+  display: grid;
+  grid-template-columns: 10% 90%;
+  margin-left: 30px;
+  height: 100%;
 }
 
-#menu_div{
+#menu_div {
   margin-top: 20%;
 }
 
-#project_tasks_title_div{
+#project_tasks_title_div {
   margin: 0 auto;
   width: 80%;
   margin-top: 20px;
   margin-bottom: 20px;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   border-radius: 2em/2em;
   transition: 0.3s;
 }
-  /* On mouse-over, add a deeper shadow */
-  #project_tasks_title_div:hover {
-    box-shadow: 0px 0px 50px rgb(187 187 187);
-  }
 
-.create_buttons{
-    border-radius: 4px;
-    border: 0;
-    box-shadow: rgba(1,60,136,.5) 0 -1px 3px 0 inset,rgba(0,44,97,.1) 0 3px 6px 0;
-    box-sizing: border-box;
-    color: #fff;
-    cursor: pointer;
-    display: inherit;
-    font-family: "Space Grotesk",-apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-    font-size: 13px;
-    font-weight: 700;
-    line-height: 24px;
-    margin: 0;
-    min-height: 35px;
-    min-width: 100px;
-    padding: 5px 5px;
-    position: relative;
-    text-align: center;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    vertical-align: baseline;
-    transition: all .2s cubic-bezier(.22, .61, .36, 1);
-    margin-bottom: 20px;
+/* On mouse-over, add a deeper shadow */
+#project_tasks_title_div:hover {
+  box-shadow: 0px 0px 50px rgb(187 187 187);
 }
-.create_buttons:hover {
-    transform: translateY(-2px);
-  }
 
-  @media (min-width: 768px) {
-    .create_buttons {
-      padding: 5px 5px;
-      min-width: 100px;
-    }
+.create_buttons {
+  border-radius: 4px;
+  border: 0;
+  box-shadow: rgba(1, 60, 136, .5) 0 -1px 3px 0 inset, rgba(0, 44, 97, .1) 0 3px 6px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inherit;
+  font-family: "Space Grotesk", -apple-system, system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 24px;
+  margin: 0;
+  min-height: 35px;
+  min-width: 100px;
+  padding: 5px 5px;
+  position: relative;
+  text-align: center;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  transition: all .2s cubic-bezier(.22, .61, .36, 1);
+  margin-bottom: 20px;
+}
+
+.create_buttons:hover {
+  transform: translateY(-2px);
+}
+
+@media (min-width: 768px) {
+  .create_buttons {
+    padding: 5px 5px;
+    min-width: 100px;
   }
-  
-#btn_newTask{
-    background-color: #0a6bff;
+}
+
+#btn_newTask {
+  background-color: #0a6bff;
 }
 
 #btn_newTask:hover {
-    background-color: #065dd8;
-  }
+  background-color: #065dd8;
+}
 
-  
-#btn_newProject{
-    background-color: #600aff;  
-    margin-bottom: 15px;
+
+#btn_newProject {
+  background-color: #600aff;
+  margin-bottom: 15px;
 }
 
 #btn_newProject:hover {
-    background-color: #4800ce;
-  }
+  background-color: #4800ce;
+}
 
-.project_container{
+.project_container {
   display: grid;
   grid-template-columns: 80% 20%;
   margin-right: 10px;
 }
 
-.project_button_container{
+.project_button_container {
   overflow: hidden;
-  }
+}
 
-.project_button_container:hover{
+.project_button_container:hover {
   overflow: visible;
-  }
+}
 
-input,label{
-    border: none;
-    font-size: 15px;
-    margin-bottom: 10px;
+input, label {
+  border: none;
+  font-size: 15px;
+  margin-bottom: 10px;
+  width: 100%;
+  height: 100%;
 }
 
 input:focus {
-    outline:none; 
+  outline: none;
 }
 
 select {
-    border-radius: 4px;
-    margin-bottom: 5px;
-    width: 40%;
+  border-radius: 4px;
+  margin-bottom: 5px;
+  width: 40%;
 }
 
 
 /*The Modal*/
 .modal {
-    position: fixed; /*Stay in place*/
-    z-index: 1; /*Sit on top*/
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: auto;
-    overflow: auto;
-    /*visibility,transition,opacity son necesarios para el efecto de fade*/
-    visibility: hidden;
-    transition: all 0.3s ease; 
-    opacity: 0;
-    
+  position: absolute;
+  z-index: 1;
+  /*Sit on top*/
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+  overflow: auto;
+  /*visibility,transition,opacity son necesarios para el efecto de fade*/
+  visibility: hidden;
+  transition: all 0.3s ease;
+  opacity: 0;
+  padding-top: 20px;
+  padding-bottom: 50px;
+
 }
 
 /* Modal Content/Box */
 .modal-content {
-    margin: 10% auto; /* 10% from the top and centered */
-    padding: 25px;
-    border: 1px #888;
-    width: 20%; /* Could be more or less, depending on screen size */
-    box-shadow: 0px 0px 50px rgb(187 187 187);
-    border-radius: 2em/2em;
-    background-color: white;
+  margin: 10% auto;
+  /* 10% from the top and centered */
+  padding: 25px;
+  border: 1px #888;
+  width: 20%;
+  /* Could be more or less, depending on screen size */
+  box-shadow: 0px 0px 50px rgb(187 187 187);
+  border-radius: 2em/2em;
+  background-color: white;
 }
 
-.modal-title{
+.modal-title {
   margin-bottom: 20px;
   border-bottom: 1px solid darkgrey;
 }
 
-.name_input{
+.name_input {
   font-size: 20px;
 }
 
-input[type="date" i]{
+input[type="date"i] {
   text-align: right;
 }
-#task_due_date{
-  transition: all 0.3s ease; 
+
+#task_due_date {
+  transition: all 0.3s ease;
 }
 
 textarea {
-  resize:none;
+  resize: none;
   padding: 1em;
   border-radius: 4px;
   border-color: #c7c7c7;
-  width:340px ;
-  height: 250px;
+  width: 100%;
+  height: 100%;
 }
 
-#option_buttons_div{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    text-align: center;  
-    margin-top: 20px;
+#option_buttons_div {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  text-align: center;
+  margin-top: 20px;
 }
 
 .save_button {
-    transition-duration: 0.4s;
-    border-radius: 4px;
-    background-color: #fcfcfc; 
-    border: none;
-    padding: 10px 40px;
-    font-size: 20px;
-    text-align: center;
-  }
+  transition-duration: 0.4s;
+  border-radius: 4px;
+  background-color: #fcfcfc;
+  border: none;
+  padding: 10px 20px;
+  font-size: 20px;
+  text-align: center;
+  width: 100%;
+}
 
 .save_button:hover {
-    background-color: #c7c7c7; 
-    color: rgb(88, 88, 88);  
-  }
+  background-color: #c7c7c7;
+  color: rgb(88, 88, 88);
+}
 
 .cancel_button {
-    transition-duration: 0.4s;
-    border-radius: 4px;
-    background-color: #fcfcfc; 
-    border: none;
-    padding: 10px 40px;
-    font-size: 20px;
-    text-align: center;
+  transition-duration: 0.4s;
+  border-radius: 4px;
+  background-color: #fcfcfc;
+  border: none;
+  padding: 10px 20px;
+  font-size: 20px;
+  text-align: center;
+  width: 100%;
 }
 
 .cancel_button:hover {
-    background-color: #e04040; 
-    color: white;
-  }
+  background-color: #e04040;
+  color: white;
+}
 
-.project_btn{
-    transition-duration: 0.4s;
-    border-radius: 4px;
-    background-color: #ffffff; 
-    border: none;
-    padding: 10px 10px;
-    font-size: 20px;
-    text-align: left;
+.project_btn {
+  transition-duration: 0.4s;
+  border-radius: 4px;
+  background-color: #ffffff;
+  border: none;
+  padding: 10px 10px;
+  font-size: 20px;
+  text-align: left;
 }
 
 .project_btn:hover {
-    background-color: #c7c7c7; 
-    color: rgb(88, 88, 88);  
-  }
-
-.check-input{
-  margin-top: 10px;
-  margin-left: 20px;
+  background-color: #c7c7c7;
+  width: auto;
+  color: rgb(88, 88, 88);
 }
 
-.delete_project_btn{
+.check-input {
+  margin-top: 10px;
+  margin-left: 20px;
+  width: auto;
+  height: auto;
+}
+
+.delete_project_btn {
   transition-duration: 0.4s;
   border-radius: 4px;
-  background-color: #ffffff; 
-  color: #dfd9d9; 
+  background-color: #ffffff;
+  color: #dfd9d9;
   border: none;
   padding: 10px 10px;
   font-size: 20px;
@@ -270,11 +291,11 @@ textarea {
 }
 
 .delete_project_btn:hover {
-  background-color: #dfd9d9; 
-  color: #e04040;  
+  background-color: #dfd9d9;
+  color: #e04040;
 }
 
-#projectName_title{
+#projectName_title {
   font-size: 35px;
   margin-top: 30px;
   margin-left: 15%;
@@ -284,23 +305,25 @@ textarea {
   text-shadow: 1px 1px 2px #adacac;
 }
 
-#listTodo_div{
+#listTodo_div {
   width: 100%;
   margin: 0 auto;
 }
 
-#listTodo_title_div{
+#listTodo_title_div {
   display: grid;
   grid-template-columns: 5% 60% 10% 20% 5%;
   width: 100%;
   margin: 0 auto;
 }
-.listTodo_title{
+
+.listTodo_title {
   margin: 0px;
   font-weight: bold;
   text-align: center;
 }
-.task_item{
+
+.task_item {
   display: grid;
   grid-template-columns: 5% 60% 10% 20% 5%;
   width: 100%;
@@ -310,17 +333,17 @@ textarea {
   padding-bottom: 5px;
 }
 
-.task_priority_txt{
-    margin: 0 auto;
-    font-size: 15px;
-    padding: 5px;
-    border-radius: 5px;
-    text-align: center;
-    width: fit-content;
-    height: fit-content;
+.task_priority_txt {
+  margin: 0 auto;
+  font-size: 15px;
+  padding: 5px;
+  border-radius: 5px;
+  text-align: center;
+  width: fit-content;
+  height: fit-content;
 }
 
-.task_duedate_txt{
+.task_duedate_txt {
   margin: 0 auto;
   font-size: 15px;
   padding: 5px;
@@ -331,7 +354,7 @@ textarea {
   background-color: #f3f3f3;
 }
 
-.delete_task_btn{
+.delete_task_btn {
   border: none;
   color: #ff004794;
   font-size: 15px;
@@ -350,20 +373,20 @@ textarea {
 
 /* Style the button that is used to open and close the collapsible content */
 .collapsible {
-    color: #444;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 15px;
-    background-color: white;
-    cursor: pointer;
-    overflow: hidden;
+  color: #444;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  background-color: white;
+  cursor: pointer;
+  overflow: hidden;
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active, .collapsible:hover {
   background-color: rgb(247, 247, 247);
-  width:100%;
+  width: 100%;
   overflow: hidden;
 }
 
@@ -375,7 +398,7 @@ textarea {
   background-color: #f1f1f1;
 }
 
-.task_desc{
+.task_desc {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
@@ -387,8 +410,80 @@ textarea {
   color: white;
 }
 
-#taskDesc_txt{
+#taskDesc_txt {
   margin-left: 20px;
   margin-right: 20px;
-  word-wrap: break-word; /*Para que se adapte al div*/
+  word-wrap: break-word;
+  /*Para que se adapte al div*/
+}
+
+/*For responsive*/
+@media only screen and (max-device-width: 1250px) {
+  #content {
+    grid-template-columns: 20% 80%;
+  }
+
+  #project_tasks_title_div {
+    width: 90%;
+  }
+
+  .logo {
+    font-size: 60px;
+  }
+
+  #btn_newTask, #btn_newProject {
+    width: 200px;
+    height: 80px;
+    font-size: 25px;
+  }
+
+  h2, .project_btn {
+    font-size: 45px;
+  }
+
+  #projectName_title {
+    font-size: 80px;
+  }
+
+  .task_item, #listTodo_title_div {
+    grid-template-columns: 10% 50% 10% 20% 5%;
+  }
+
+  .listTodo_title {
+    font-size: 20px;
+  }
+
+  .check-input {
+    margin-left: 10px;
+    width: 30px;
+    height: 30px;
+  }
+
+  .collapsible, .task_priority_txt, .task_duedate_ {
+    font-size: 35px;
+  }
+
+  .delete_task_btn, .delete_project_btn {
+    font-size: 40px;
+    height: 50px;
+    width: 50px;
+  }
+
+  .modal-content {
+    width: 80%;
+  }
+
+  .name_input {
+    font-size: 50px;
+  }
+
+  input, label, select, textarea, .save_button, .cancel_button, #task_due_date,.modal-title {
+    font-size: 30px;
+  }
+
+  .save_button, .cancel_button, #task_due_date {
+    padding: 20px 20px;
+  }
+
+
 }
