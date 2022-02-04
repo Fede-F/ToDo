@@ -11,19 +11,6 @@ createTask.tasks_list_container.addEventListener('click', deleteTask);
 //Evento al clickear el boton de tareas para expandir
 createTask.tasks_list_container.addEventListener('click', expandTaskDetails);
 
-/*
-for (i = 0; i < createTask.btn_taskCollapse.length; i++) {
-    createTask.btn_taskCollapse[i].addEventListener('click', function() {
-      this.classList.toggle("active");
-      var content = this.nextElementSibling;
-      if (content.style.display === "block") {
-        content.style.display = "none";
-      } else {
-        content.style.display = "block";
-      }
-    });
-  }
-*/
 //Eventos para los proyectos
 createProject.btn_newProject.addEventListener('click', createProject.show_projectCreation_Popup);
 createProject.btn_saveProject.addEventListener('click', createProject.submit_newProject);

@@ -27,9 +27,6 @@ const createTask = (() => {
     }
 
     function hide_taskCreation_Popup() {
-        inpt_task_name.value = "";
-        inpt_task_due_date.value = "";
-        inpt_task_description.value = "";
         newTask_popup.style.visibility = "hidden";
         newTask_popup.style.opacity = "0";
     }
@@ -45,9 +42,6 @@ const createTask = (() => {
             //Crea y obtiene el nuevo objeto projecto
             CreateTask(inpt_task_name.value, inpt_task_projectId_value, inpt_task_priority_value, duedate, inpt_task_description.value, false);
             hide_taskCreation_Popup();
-            inpt_task_name.value = "";
-            inpt_task_due_date.value = "";
-            inpt_task_description.value = "";
             setProjectActive(inpt_task_projectId_value);
         }
     }
