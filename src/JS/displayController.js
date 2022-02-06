@@ -29,6 +29,11 @@ const createTask = (() => {
     function hide_taskCreation_Popup() {
         newTask_popup.style.visibility = "hidden";
         newTask_popup.style.opacity = "0";
+        inpt_task_name.value="";
+        inpt_task_priority.value="";
+        inpt_task_due_date.value="";
+        inpt_task_description.value="";
+
     }
 
     function submit_newTask() {
@@ -88,9 +93,9 @@ const createProject = (() => {
     };
 
     function hide_projectCreation_Popup() {
-        inpt_Projectname.value = "";
         newProject_popup.style.visibility = "hidden";
         newProject_popup.style.opacity = "0";
+        inpt_Projectname.value = "";
     };
 
     //Carga la lista de proyectos
